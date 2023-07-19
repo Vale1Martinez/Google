@@ -1,0 +1,203 @@
+body{
+margin: 0;
+padding: 0%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+}
+
+/******************************NAVEACION******************+********/
+
+header{
+width: 100%;
+height: 60;
+}
+
+
+header nav{
+/*Justificar a la derecha*/
+display: flex;
+justify-content:flex-end;
+}
+
+header nav .nav-right-section{
+width: 20px;
+/*Eliminar puntos de la lista no ordenada*/
+list-style-type: none;
+/*prpiedad Flex-Hace que sea responsivo y flexible*/
+display: flex;
+justify-content: center;
+/*Centrado verticalmente*/
+align-items: center;
+height: auto;
+}
+
+a{
+/*remueve lineas de abajo*/
+text-decoration: none;
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: rgba(0,0,0,87);
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /*Escala la imagen al mayor tamaño posible sin recortarla ni estirarla*/
+    background-size: contain;
+}
+
+nav .nav-right-section img{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    border-radius: 30px;
+}
+
+/******************************-BUSCADOR MAIN-********************************************/
+
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+
+/*Seccion logo*/
+main .main-logo{
+    width: 530px;
+    /** 0-es no margen arriba y abajo
+    auto-izquierda y derecha se ajustan auto*/
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+    height: 120px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+}
+
+
+ main .main-input-container{
+    /*Anchura de linea, estilo de linea y color*/
+    border: 1px solid #dfe1e5;
+    width: 525px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+ }
+
+
+main .main-input input{
+border: none;
+height: 40px;
+outline: none;
+width: 450px;
+}
+
+main .main-input-container:hover{
+border-color: #dfe1e500;
+box-shadow: 0px 1px 6px 0px  #061e6874;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    background-size:contain;
+    height: 14px;
+    padding-left: 6%;
+    background-repeat:no-repeat ;
+
+}
+
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-position: center;
+    background-size:contain;
+    height: 17px;
+    padding-right: 7%;
+    background-repeat:no-repeat;
+
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-position: center;
+    background-size:contain;
+    height: 16px;
+    padding-right: 7%;
+    background-repeat:no-repeat ;
+    margin-right: 6px;
+}
+
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: 0;
+    background-color: #f8f9fa;
+    font-size: 16px;
+    color: #3c4043;
+    height: 40px;
+    /*Reondear botones*/
+    border-radius: 5px;
+    /*Margen interno*/
+    padding: 0 15px;
+    /*Margen entre botones*/
+    margin-right: 15px;
+}
+
+main .main-buttons button:hover{
+    /* añade efectos de sombra alrededor del marco de un elemento. */
+    border-color: #dfe1e52c;
+    box-shadow: 1px 1px 4px 1px  #061e6874;
+    font-weight: 550;
+    }
+
+/**************************Footer*************/
+footer {
+    position: absolute;
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    font-size: 13px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-top: 1px solid #ffffffdc;
+    bottom: 0%;
+}
+
+footer .footer-right-section{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+footer .footer-left-section{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    justify-self: right;
+}
+
+li{
+    margin: 10px;
+    color: #787a7c;
+}
